@@ -1,0 +1,22 @@
+<div  class="blog-card">   
+  <div class="meta">            
+      <img class="photo" src = "{{skill.url}}">           
+  </div>
+  <div class="description">
+      <h2>{{skill.id}}</h2>
+      <h1>{{skill.titulo}}</h1>
+      <h2>{{skill.subtitulo}}</h2>
+      <div class="read-more" *ngIf="!reading() else elseBlock">
+        <div class="barra"></div>
+        <p>{{skill.info}}</p>
+        <a  (click)='read()'>Leer mas</a>
+      </div>                        
+      <ng-template #elseBlock>
+          <div class="read-less">
+            <div class="barra2"></div>
+            <p>{{skill.extra}}</p>
+            <a  (click)='read()'>Leer Menos</a>
+          </div>
+      </ng-template> 
+  </div> 
+</div> 

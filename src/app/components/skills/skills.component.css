@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#fondo{
+    background: var(--colorFondoTransparente);
+    width: 100vw;
+    height: 100vh;
+    color: var(--color1);
+}
+
+#table{
+    width: 100%;
+}
+
+th{
+    width: 10rem;
+    background: var(--color6);
+    color: var(--colorFondo);
+    font-size: 24px;
+}
+
+td{
+    width: 10rem;
+    overflow: hidden;
+    height: .1rem;
+}
+
+tr{
+    background: var(--colorFondo);
+}
+
+h1{
+    padding: 2rem;
+    text-align: center;
+    font-size: 32px;
+    height: 1rem;
+}
+
+.btnEdit{
+    background: gold;
+    font-size: 16px;
+}
+
+.btnElim{
+    background: red;
+    font-size: 16px;
+}
+
+#botonera{
+    margin: 1rem;
+    height: 2rem;
+    width: 100;
+    /*border: 3px greenyellow solid;*/
+}
+
+.btnNU{
+    font-size: 16px;
+    background: greenyellow;
+    height: 100%;
+}

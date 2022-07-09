@@ -1,0 +1,39 @@
+<div id="fondo">
+    <div id="carta">
+
+        <h1>Registro de Habilidad</h1>
+
+        <div class="row">
+            <label>Titulo: </label>
+            <input type="text" [(ngModel)]="skill.titulo">
+        </div>
+
+        <div class="row">
+            <label>Subtitulo: </label>
+            <input type="text" [(ngModel)]="skill.subtitulo">
+        </div>
+
+        <div class="row">
+            <label>Info: </label>
+            <input type="text" [(ngModel)]="skill.info">
+        </div>
+
+        <div class="row">
+            <label>Extra: </label>
+            <input type="text" [(ngModel)]="skill.extra">
+        </div>
+
+        <div class="row">
+            <label>URL Imagen: </label>
+            <input type="text" [(ngModel)]="skill.url">
+        </div>
+
+        <div class="row">
+            <button class="btn" type="button" (click)='create()' *ngIf="!skill.id else elseBlock"> Registrarse</button>
+            <ng-template #elseBlock>
+                <button class="btn" type="button" (click)='update()' > Actualizar</button>
+            </ng-template>            
+        </div>
+
+    </div>
+</div>

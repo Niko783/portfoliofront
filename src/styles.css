@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --colorFondo: black;
+  --colorFondoTransparente: rgba(0,0,0,0.9);
+  --colorBorder: rgb(205,205,205) 5px outset;
+  --color1: lime;
+  --color2: yellow;
+  --color3: cyan;
+  --color4: black;
+  --color5: white;
+  --color6: rgb(205,205,205);
+  --color7: rgb(50,50,50);
+}
+
+body {
+  background:  url("./assets/Recursos/images/cg6.PNG") center center fixed;/*no-repeat*/
+  margin: 0;
+  padding: 0;
+}

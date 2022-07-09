@@ -1,0 +1,36 @@
+<div id="fondo">
+    <div>
+      <h1>"Lista de Habilidades"</h1>
+    </div>   
+    
+    <div id="botonera">
+      <button class="btnNU" type="button" [routerLink]="['/skills/form']">Nueva Habilidad</button>
+    </div>
+  
+      <table id="table">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Titulo</th>
+              <th scope="col">Subtitulo</th>
+              <th scope="col">Info</th>
+              <th scope="col">Extra</th>
+              <th scope="col">URL</th>
+              <th scope="col">Editar</th>
+              <th scope="col">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let skill of skills" >            
+                <td>{{skill.id}}</td>
+                <td>{{skill.titulo}}</td>
+                <td>{{skill.subtitulo}}</td>
+                <td>{{skill.info}}</td>
+                <td>{{skill.extra}}</td>
+                <td>{{skill.url}}</td>
+                <td> <button class="btnEdit" type="button"  [routerLink]="['/skills/form', skill.id]"> Editar</button> </td>
+                <td> <button class="btnElim" type="button" (click)="delete(skill)"> Eliminar</button> </td>             
+            </tr>
+          </tbody>
+        </table>
+  </div>

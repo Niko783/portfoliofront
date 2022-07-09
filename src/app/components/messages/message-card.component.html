@@ -1,0 +1,22 @@
+<div class="fondo">
+    <div class="row">
+        <label>Nombre:</label>
+        <p>{{mensaje.nombre}}</p>
+    </div>
+    <div class="row">
+        <label>Correo:</label>
+        <p>{{mensaje.correo}}</p>
+    </div>
+    <div class="row">
+        <label>Asunto:</label>
+        <p>{{mensaje.asunto}}</p>
+    </div>
+    <div class="rowM">
+        <label>Mensaje:</label>
+        <textarea readonly>{{mensaje.mensaje}}</textarea>
+    </div>
+    <button class="btnElim" type="button" (click)="delete(mensaje)"> Eliminar</button>
+</div>  
+
+    
+     

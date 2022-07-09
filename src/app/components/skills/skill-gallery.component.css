@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    background: var(--colorFondo);
+    font-size: 32px;
+    font-weight: bolder;
+    color: var(--color1);
+    text-align: center;
+    border-bottom: double 8px var(--color3);
+}

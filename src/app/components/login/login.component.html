@@ -1,0 +1,26 @@
+<div id="fondo">
+    <div  id="carta" *ngIf="!isLogged() else elseBlock">
+        <h1>Log In</h1>
+
+        <div class="row">
+            <label>Usuario: </label>
+            <input type="text" [(ngModel)]="user">
+        </div>
+
+        <div class="row">
+            <label>Contraseña: </label>
+            <input type="password" [(ngModel)]="password">
+        </div>
+        <div class="row"> 
+            <button routerLink="home" class="btn" type="button" (click)='login()' > Entrar</button>                       
+        </div>
+    </div>
+    <ng-template #elseBlock>
+        <div  id="carta2">
+            <h1>Log Out</h1>
+            <div class="row"> 
+                <button routerLink="home" class="btn" type="button" (click)='logout()' > Salir</button>                       
+            </div>
+        </div>
+    </ng-template>
+</div>

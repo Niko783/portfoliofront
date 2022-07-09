@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header {  
+  background: var(--colorFondoTransparente);
+  border-bottom: var(--colorBorder); 
+  height: 5rem;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position:fixed;
+  display: flex;
+  justify-content: space-around; 
+  z-index: 1000;
+}   
+
+.n{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.m{
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+#titulo{
+  left: 0;
+  font-family:  'Love Light', cursive, 'Times New Roman', Times, serif;
+  font-size: 3.5rem;
+
+  animation-name: mover;
+  animation-duration: 7s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  position: relative;
+}
+
+@keyframes mover {
+  0%{transform: translateX(-30%);color: var(--color1);}
+  25%{color: var(--color3);}
+  50%{transform: translateX(50%);color: var(--color2);}
+  75%{color: var(--color3);}
+  100%{transform: translateX(-30%);color: var(--color1);}
+}
+
+#titulo:hover{  
+  animation-play-state: paused;
+}
+
+a{
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 1rem;
+  color: var(--color1);
+}
+
+
+
+.menu{   
+  transition: font-size 500ms linear 20ms;
+}
+
+.menu:hover{
+  font-size:2.1em; 
+  color: var(--color2);
+}
+
+ 
+.fondo{
+  margin: 0;
+  padding: 0;
+  height: 5rem;
+  width: 100%;
+  background: var(--colorFondo);
+}
+
+
+
+#modo{  
+  padding: .5rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+#modo:hover{
+  background: var(--color4);  
+  border: var(--colorBorder);
+  animation: boing 500ms ease-in-out;
+}
+@keyframes boing {
+  15%, 40%, 75%, 100% {
+      transform-origin: center center;
+  }
+  15% {
+      transform: scale(1.2, 1.1);
+  }
+  40% {
+      transform: scale(0.95, 0.95);
+  }
+  75% {
+      transform: scale(1.05, 1);
+  }
+  100% {
+      transform: scale(1, 1);
+  }
+}
+
+#messages{
+  display: none;
+}
+
+#skills{
+  display: none;
+}

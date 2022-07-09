@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#fondo{
+    background:  var(--colorFondoTransparente);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+#carta{
+    margin: auto;
+    background: var(--color7);
+    color: var(--color1);
+    text-align: center;
+    height: 10rem;
+    width: 20rem;
+    border-radius: 5%;
+    font-size: 16px;
+}
+
+#carta2{
+    margin: auto;
+    background: var(--color7);
+    color: var(--color1);
+    text-align: center;
+    height: 5rem;
+    width: 10rem;
+    border-radius: 5%;
+    font-size: 16px;
+}
+
+.row{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    font-weight: bold;
+    width: 10rem;
+    text-align: justify;
+}
+
+.btn{
+    font-size: 16px;
+    font-weight: bolder;
+    background: var(--color1);
+    border-radius: 10%;
+    width: 5rem;
+}
+
+h1{
+    font-size: 32px;
+}
+
+input{    
+    width: 20rem;
+}

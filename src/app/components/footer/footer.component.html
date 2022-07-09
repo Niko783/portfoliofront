@@ -1,0 +1,34 @@
+<div id="fondo">
+    <div class="titulo">
+        <h1>Contacto</h1>
+        <p>Para mas informacion, escribeme a mis redes sociales</p>
+    </div>
+    <div class="panel">        
+        <section class="redes">
+            <a href="https://www.facebook.com/NikoLopez783/"><img class="logo" id="face" src="./assets/Recursos/images/face.PNG" alt="Logo Facebook"/></a>
+            <a href="https://www.instagram.com/franconikolopez/"><img class="logo" id="insta" src="./assets/Recursos/images/insta.PNG" alt="Logo Instagram"/></a>
+            <a href="https://wa.me/543874825535"><img class="logo" id="wapp" src="./assets/Recursos/images/wapp.PNG" alt="Logo Whatsapp"/></a>
+        </section>
+
+        <section class="form-contact">
+            <header>
+                <span>E-Mail</span>
+            </header>
+            <form action="" class="contact">
+                <label for="nombres">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" [(ngModel)]="mje.nombre">
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" id="correo" [(ngModel)]="mje.correo">
+                <label for="asunto">Asunto:</label>
+                <input type="text" name="asunto" id="asunto" [(ngModel)]="mje.asunto">
+                <label for="mensaje">Mensaje:</label>
+                <textarea type="text" name="mensaje" id="mensaje" [(ngModel)]="mje.mensaje"></textarea>
+                <input routerLink="contact"  type="button" (click)='enviar()' type ="submit" value = "Enviar">
+            </form>
+        </section>
+        <div></div>
+    </div>    
+    <div class="copyright">
+        <p>Niko Lopez © 2022</p>
+    </div>
+</div>    
