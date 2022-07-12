@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/portfolio",
     "site": "nikolopez783",
     "ignore": [
       "firebase.json",
@@ -10,7 +10,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/portfolio/index.html"
+        "destination": "/index.html"
       }
     ]
   }
