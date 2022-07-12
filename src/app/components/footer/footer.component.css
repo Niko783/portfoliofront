@@ -7,6 +7,11 @@
 h1 {
   font-weight:bold;
   font-size: 1.5rem;
+  text-align: center;
+}
+
+p{  
+  text-align: center;
 }
 
 #fondo {
@@ -72,7 +77,7 @@ h1 {
 }
 
 .form-contact{
-  position: relative;
+  position: absolute;
   background: var(--color7);
   width: 400px;
   top: 30%;
@@ -144,5 +149,4 @@ input[type='submit']{
   width: 100%;
   background: var(--colorFondo);
   border-top: 8px double var(--color1);
-  text-align: center;
 }
