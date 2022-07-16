@@ -1,17 +1,10 @@
 {
   "hosting": {
-    "public": "dist/portfolio",
-    "site": "nikolopez783",
+    "public": "./dist/portfolio",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }
